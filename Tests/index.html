@@ -1,0 +1,35 @@
+<html >
+    <head>
+        <title>Edwin Web</title>
+    </head>
+    <body>
+    
+        <div style="font-size: 34px;">
+            Esta es la web de <strong>Edwin</strong>
+            <img src="./ballena.jpg" style="width: 60px; height: 50px;">
+        </div>
+        
+        
+        <br/>
+        <br/>
+        Cantidad de manzanas: <input type="text" id="cantidad">
+        <button type="button" style="height:30px;width:100px" onclick="manzanas(document.getElementById('cantidad').value)">Pulsar</button>
+        <br/>
+        <br/>
+
+        <script>
+            function manzanas(manzanasEnCaja) {
+
+                while (manzanasEnCaja > 10) {
+                    document.write(manzanasEnCaja + " manzanas <br>");
+
+                    manzanasEnCaja--;
+                }
+                document.write("Hay pocas manzanas<br>");
+            }
+            function mensaje(parametro1){
+                alert(parametro1);
+            }
+        </script>
+    </body>
+</html>
